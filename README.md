@@ -21,6 +21,7 @@ To install the dependencies, run the following command in the project's base fol
 cmd
 mvn clean verify
 
+![image](https://user-images.githubusercontent.com/43953415/176305335-35bf6d23-14a3-4e49-9b4d-655fb35a8636.png)
 
 Improvements:
 Example, Tag, Data Driven
