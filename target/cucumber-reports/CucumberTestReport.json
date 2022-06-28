@@ -1,0 +1,123 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-28T21:30:26.902Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3662939700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify the customer is able to add products to cart and remove one or more added products from cart",
+        "description": "",
+        "id": "add-\u0026-update-cart;verify-the-customer-is-able-to-add-products-to-cart-and-remove-one-or-more-added-products-from-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 200630500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4323873800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add four random items to my cart",
+            "match": {
+              "location": "DemoApplicationSteps.i_add_random_items_to_my_cart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1258315700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I view my cart",
+            "match": {
+              "location": "DemoApplicationSteps.i_view_my_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38128700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I find total four items listed in my cart",
+            "match": {
+              "location": "DemoApplicationSteps.i_find_four_items_in_my_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2164846200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am able to remove the lowest price item from my cart",
+            "match": {
+              "location": "DemoApplicationSteps.i_remove_lowest_priced_product_from_my_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30417700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am able to verify three items in my cart",
+            "match": {
+              "location": "DemoApplicationSteps.i_find_three_items_in_my_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cart"
+          },
+          {
+            "name": "@updatecart"
+          }
+        ]
+      }
+    ],
+    "name": "Add \u0026 Update Cart",
+    "description": "",
+    "id": "add-\u0026-update-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Cart.feature",
+    "tags": [
+      {
+        "name": "@Cart",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
